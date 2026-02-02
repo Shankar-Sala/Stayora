@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #02f8aee0;
+   font-family: "Plus Jakarta Sans", sans-serif !important;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.container{
+  flex: 1;
+}
+
+/* Navbar  */
+.navbar{
+  height: 5rem;
+  background-color: #fff;
+}
+
+.nav-link{
+  color: #222222 !important;
+}
+
+
+/* footer */
+.f-info{
+  height: 8rem;
+  display: flex;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials{
+  margin-top: 1.5rem;
+}
+
+
+.f-info-links a{
+  text-decoration: none;
+  color: #222;
+}
+
+.icon-color-linkedin{
+  color: #0077B5;
+}
+.icon-color-twitter{
+  color: #222;
+}
+
+.icon-color-insta{
+  background: linear-gradient(
+    45deg,
+    #FEDA75,
+    #FA7E1E,
+    #D62976,
+    #962FBF,
+    #4F5BD5
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.i-size{
+font-size: 1.5rem;
+margin-right: 1rem;
+}
+
+/* cards  */
+.card{
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body{
+  padding: 0 !important;
+}
+
+.card-text p{
+  font-weight: 400 !important;
+}
+
+.listing-link{
+  text-decoration: none;
+}
+
+/* card effect  */
+.card-img-overlay{
+  opacity: 0;
+}
+
+.card-img-overlay:hover{
+  opacity: 0.2;
+  background-color: #fff;
+}
+
+/* new page  */
+
+.add-btn{
+  background-color:#fe424d !important;
+  border: none !important;
+}
+
+/* edit page */
+
+.edit-btn{
+  background-color:#fe424d !important;
+  border: none !important;
+}
+
+/* show page  */
+.show-img{
+  height: 30vh;
+}

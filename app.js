@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require("method-override");
+const ejsMate = require("ejs-mate")
 
 // https://mongoosejs.com/
 const MONGO_URL = "mongodb://127.0.0.1:27017/stayora";
@@ -28,6 +29,8 @@ app.use(methodOverride("_method"));
 app.get("/", (req, res) => {
   res.send("Hi, I am Root Page");
 });
+app.engine('ejs', ejsMate)
+app.use(express.static(path.join(__dirname, "/public")))
 
 //index route
 app.get("/listings", async (req, res) => {
